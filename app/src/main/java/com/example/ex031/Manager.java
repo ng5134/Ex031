@@ -14,4 +14,12 @@ public class Manager extends Employee implements BonusEligible{
     public double calculateMonthlySalary(){
         return (baseSalary);
     }
+    @Override
+    public double calculateBonus(){
+        return(baseSalary * managementBonusPercentage);
+    }
+    @Override
+    public String toString() {
+        super.toString()+",department: "+department;
+    }
 }
