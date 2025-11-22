@@ -25,5 +25,14 @@ public class MainActivity extends AppCompatActivity {
         allEmployees.add(new Salesperson(3,"noa",35000,0.4,80000));
         allEmployees.add(new HourlyEmployee(4,"daniel",500,250,120));
         allEmployees.add(new HourlyEmployee(5,"Abraham",90,160,35));
+
+        String text= "";
+        for (Employee e: allEmployees){
+            text +=e.toString()+"\n";
+            text
+        }
+
+
+
     }
 }
