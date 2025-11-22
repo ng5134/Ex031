@@ -11,8 +11,8 @@ public class HourlyEmployee extends Employee {
 
     }
     @Override
-    public dounle calculateMonthlySalary(){
-        return hoursWorked *hourlyRate
+    public double calculateMonthlySalary(){
+        return (hoursWorked *hourlyRate);
     }
 
 }
