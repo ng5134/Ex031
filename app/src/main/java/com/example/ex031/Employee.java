@@ -5,10 +5,10 @@ public abstract class Employee {
     private String name;
     protected double baseSalary;
 
-    public Employee(int employeeId,String name, double baceSalary){
-        this.employeeId=employeeId;
-        this.name=name;
-        this.baseSalary=baceSalary;
+    public Employee(int employeeId, String name, double baceSalary) {
+        this.employeeId = employeeId;
+        this.name = name;
+        this.baseSalary = baceSalary;
     }
 
     public int getEmployeeId() {
@@ -23,8 +23,11 @@ public abstract class Employee {
         return baseSalary;
     }
 
-    public abstract double calculateMonthlySalary{
+    public abstract double calculateMonthlySalary();
 
+    @Override
+    public String toString() {
+
+        return ("id: " + employeeId + ",name: " + name + ",base salary: " + baseSalary);
     }
-
 }
