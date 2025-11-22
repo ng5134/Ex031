@@ -29,8 +29,20 @@ public class MainActivity extends AppCompatActivity {
         String text= "";
         for (Employee e: allEmployees){
             text +=e.toString()+"\n";
-            text
+            text +="Monthly Salary: "+e.calculateMonthlySalary()+"\n"+"\n";
+
         }
+
+        double totalBonuses=0;
+        for (Employee e: allEmployees){
+            if (e instanceof BonusEligible){
+                totalBonuses +=((BonusEligible)e).calculateBonus();
+            }
+        }
+
+        text += "total bonuses: " +totalBonuses;
+        System.out.println(text);
+
 
 
 
