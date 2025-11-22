@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
 
         List<Employee> allEmployees =new ArrayList<>();
 
-        allEmployees.add();
-        allEmployees.add();
-        allEmployees.add();
-        allEmployees.add();
-        allEmployees.add();
+        allEmployees.add(new Manager(1,));
+        allEmployees.add(new Salesperson());
+        allEmployees.add(new HourlyEmployee());
+        allEmployees.add(new HourlyEmployee());
+        allEmployees.add(new Manager(2,));
     }
 }
