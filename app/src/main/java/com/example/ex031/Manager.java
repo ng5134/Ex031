@@ -11,5 +11,7 @@ public class Manager extends Employee implements BonusEligible{
 
     }
     @Override
-    double calculateMonthlySalary:
+    public double calculateMonthlySalary(){
+        return (baseSalary);
+    }
 }
