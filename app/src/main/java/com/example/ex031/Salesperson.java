@@ -15,7 +15,7 @@ public class Salesperson extends Employee implements BonusEligible{
     }
     @Override
     public double calculateBonus(){
-        return(( 0.05 * totalSales מהמכירות );
+        return( 0.05 * totalSales);
     }
 
 
