@@ -17,7 +17,5 @@ public class Salesperson extends Employee implements BonusEligible{
     public double calculateBonus(){
         return( 0.05 * totalSales);
     }
-
-
 }
 
