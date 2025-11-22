@@ -20,6 +20,6 @@ public class Manager extends Employee implements BonusEligible{
     }
     @Override
     public String toString() {
-        super.toString()+",department: "+department;
+        return (super.toString()+",department: "+department);
     }
 }
