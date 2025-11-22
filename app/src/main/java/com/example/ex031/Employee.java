@@ -28,6 +28,8 @@ public abstract class Employee {
     @Override
     public String toString() {
 
-        return ("id: " + employeeId + ",name: " + name + ",base salary: " + baseSalary);
+        return ("id: " + employeeId +
+                ",name: " + name +
+                ",base salary: " + baseSalary);
     }
 }
