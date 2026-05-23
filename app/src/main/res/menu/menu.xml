@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home" android:title="מסך ראשי" />
+    <item android:id="@+id/menu_add" android:title="הוספת הוצאה" />
+    <item android:id="@+id/menu_search" android:title="חיפוש וסינון" />
+    <item android:id="@+id/menu_credits" android:title="קרדיטים" />
+</menu>

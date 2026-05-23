@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Ex0031</string>
+    <string-array name="categories">
+        <item>אוכל</item>
+        <item>בילויים</item>
+        <item>לימודים</item>
+        <item>אחר</item>
+    </string-array>
 </resources>

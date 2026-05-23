@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="תיאור ההוצאה" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="37dp" />
+
+    <EditText
+        android:id="@+id/et_amount_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="סכום (₪)"
+        android:inputType="numberDecimal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="39dp" />
+
+    <Spinner
+        android:id="@+id/sp_category_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_date_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="לחץ לבחירת תאריך"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:background="#E0E0E0"
+        android:onClick="showDatePickerDialog" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:minHeight="48dp"
+        android:onClick="saveExpense"
+        android:text="שמור נתונים" />
+</LinearLayout>
